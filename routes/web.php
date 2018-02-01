@@ -13,6 +13,12 @@
 
 Route::get('/','FrontController@index');
 
+Route::post('/catalogo/save', 'CatalogoController@save');
+Route::post('/catalogo/update/{id}', 'CatalogoController@update');
+Route::get('/catalogo/destroy/{id}', 'CatalogoController@destroy');
+
+Route::resource('', 'CatalogoController');
+
 /*
 Otra opcion
 Route::get('/', function () {
