@@ -6,6 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class catalogo extends Model
 {
+    protected $table = 'catalogos';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'id', 'nombreproducto', 'precio',
     ];
